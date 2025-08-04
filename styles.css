@@ -322,8 +322,10 @@ header .row {
 }
 
 .header__description {
-    width: calc(100% - 60%);
+    max-width: 40%;
+
 }
+
 
 .header__description--para {
     font-size: 16px;
@@ -347,7 +349,7 @@ header .row {
 }
 
 .header__img {
-    width: calc(100% - 40%);
+    max-width: 60%;
     max-width: 768px;
 }
 
@@ -1360,8 +1362,11 @@ footer {
     .footer__social--link:first-child {
         margin-left: 0px;
     }
+}
 
 
+.footer__social--links {
+    display: flex;
 
 }
 
