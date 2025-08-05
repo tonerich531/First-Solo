@@ -224,11 +224,11 @@ nav {
 
 
 
-.btn__menu {
-    display: none; 
+.btn__menu {    
     background: transparent;
     border: none;
-    transition: all 300ms ease;
+    font-size: 40px;
+    color: #6415ff;
 }
 
 
@@ -250,13 +250,24 @@ nav {
 }
 
 
-.menu__open .menu__backdrop {
-    visibility: visible;
-    opacity: 1;
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10;
+    padding: 8px;
+    color: white;
 }
 
 
-.menu__open {
+.menu--open .menu__backdrop {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+
+.menu--open {
     max-height: 100vh;
     overflow: hidden;
 }
@@ -266,7 +277,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 
@@ -297,13 +307,7 @@ nav {
 }
 
 
-.btn__menu--close {
-    position: absolute;
-    right: 20px;
-    top: 10;
-    padding: 8px;
-    color: white;
-}
+
 
 
 
