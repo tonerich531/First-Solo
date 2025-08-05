@@ -466,7 +466,6 @@ header .row {
 
 
 
-
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -530,8 +529,7 @@ header .row {
 
 .quality__description {
     display: flex;
-    flex-direction: column;
-    align-items: center;    
+    flex-direction: column;        
     width: 50%;
     max-width: 576px;
     margin-right: 64px;
@@ -539,13 +537,23 @@ header .row {
 }
 
 
-.quality__img {
 
+.quality__btn {  
+    width: 50%;  
+    background-color: #6415ff;    
+    padding: 12px 32px;
+    border: none;
+    border-radius: 500px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    transition: all 300ms;
 }
 
 
-.quality__btn {
-    text-align: center;
+
+.quality__btn:hover {
+    background-color: rgb(80,17,204);
 }
 
 
@@ -559,6 +567,8 @@ header .row {
     z-index: 2;
     display: flex
 }
+
+
 
 .quality {
     z-index: 1;
@@ -706,8 +716,20 @@ header .row {
 }
 
 
-.value__btn {
+.values__btn {
+    background-color: #6415ff;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 500px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    transition: all 300ms;
+}
 
+
+.values__btn:hover {
+    background-color: rgb(80,17,204);
 }
 
 
