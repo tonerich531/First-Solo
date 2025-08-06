@@ -1074,7 +1074,7 @@ header .row {
 
 .start__row {
      display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;    
     width: 100%;
     margin: 0 auto;
@@ -1086,7 +1086,7 @@ header .row {
 
 .start__title {
     color: #f7fafc;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.5;
     z-index: 2;
@@ -1098,7 +1098,9 @@ header .row {
 
 .start__buttons {
     display: flex;
-    
+    max-height: 100%;
+    justify-content: space-around;
+    gap: 16px;
     
 }
 
@@ -1106,6 +1108,7 @@ header .row {
 .start__button {
     padding: 20px 40px;
     width: 100%;
+    max-width: 280px;
     border-radius: 500px;
     font-weight: 700;
     font-size: 16px;
@@ -1120,7 +1123,6 @@ header .row {
 .start__button:nth-child(1) {
     background: #f56565;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    margin-right: 32px;
     transition: all 300ms;
 }
 
@@ -1390,7 +1392,7 @@ footer {
 
 
     .start__buttons {
-        width: auto;
+        width: 100%;
         margin-top: 24px;
     }
 
@@ -1542,13 +1544,7 @@ footer {
     }
 
 
-
-
-    .start__row {
-        
-    }
-
-    .btn {
+       .btn {
         text-align: center;
     }
 
@@ -1557,17 +1553,16 @@ footer {
     .start__buttons {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        
-        
-        
+        align-items: center;        
     }
 
 
     .start__button {
-        width: auto;
-        text-align: center;
-        padding-bottom: 8px;
+        width: 100%;
+        max-width: 576px;
+        max-height: 100px;
+        margin-top: 0;
+        
     }
 
     .header__email {
@@ -1669,6 +1664,8 @@ footer {
 
 
     .start__title {
+        text-align: center;
+        width: 100%;
         font-size: 24px;
     }
 
