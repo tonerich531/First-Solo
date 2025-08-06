@@ -26,7 +26,8 @@ li {
     padding: 96px 0;
 }
 
-.row {    
+.row {  
+      
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;    
@@ -1058,26 +1059,28 @@ header .row {
 /*  START  */
 
 
+
 .start__container { 
     position: relative;   
     padding: 96px 0;
     width: 100%;
     background-color: rgb(100, 21, 255);
     border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
+
+    
 }
 
 
 .start__row {
+     display: flex;
+    flex-direction: column;
+    align-items: center;    
     width: 100%;
     margin: 0 auto;
     max-width: 1024px;
     padding: 0 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 }
 
 
@@ -1089,17 +1092,20 @@ header .row {
     z-index: 2;
     width: 50%;
     padding-right: 48px;
+    text-align: center;
 }
 
 
 .start__buttons {
     display: flex;
-    justify-content: flex-end;
+    
+    
 }
 
 
 .start__button {
     padding: 20px 40px;
+    width: 100%;
     border-radius: 500px;
     font-weight: 700;
     font-size: 16px;
@@ -1156,7 +1162,8 @@ footer {
 .footer__columns {
     margin-top: -48px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
    
 }
 
@@ -1475,6 +1482,12 @@ footer {
         
     }
 
+    .footer__columns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 
     
 
@@ -1547,10 +1560,12 @@ footer {
         align-items: center;
         
         
+        
     }
 
 
     .start__button {
+        width: auto;
         text-align: center;
         padding-bottom: 8px;
     }
@@ -1660,7 +1675,9 @@ footer {
 
   
     .footer__columns {
-        justify-content: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
 
