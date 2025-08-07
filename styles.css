@@ -1073,7 +1073,7 @@ header .row {
 
 
 .start__row {
-     display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;    
     width: 100%;
@@ -1091,15 +1091,15 @@ header .row {
     line-height: 1.5;
     z-index: 2;
     width: 50%;
-    padding-right: 48px;
+    padding-right: 24px;
     text-align: center;
 }
 
 
 .start__buttons {
     display: flex;
-    max-height: 100%;
-    justify-content: space-around;
+    max-width: 100%;
+    justify-content: space-between;
     gap: 16px;
     
 }
@@ -1107,8 +1107,7 @@ header .row {
 
 .start__button {
     padding: 20px 40px;
-    width: 100%;
-    max-width: 280px;
+    max-width: 100%;
     border-radius: 500px;
     font-weight: 700;
     font-size: 16px;
@@ -1381,6 +1380,8 @@ footer {
     .start__row {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding: none;
     }
 
 
@@ -1392,10 +1393,15 @@ footer {
 
 
     .start__buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        margin-top: 24px;
+        max-width: 100%;
+        padding: 16px 0;
     }
-
+        
+    
 
     footer {
         padding: 80px 32px;
@@ -1484,6 +1490,11 @@ footer {
         
     }
 
+
+    .start__title {
+        padding: none;
+    }
+
     .footer__columns {
         display: flex;
         justify-content: space-between;
@@ -1559,11 +1570,11 @@ footer {
 
     .start__button {
         width: 100%;
-        max-width: 576px;
-        max-height: 100px;
-        margin-top: 0;
-        
+        max-width: 184px;
+        margin-top: 0;        
     }
+
+
 
     .header__email {
         flex-direction: column;
